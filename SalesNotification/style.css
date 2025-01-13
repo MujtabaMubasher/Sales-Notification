@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.614) ;
+    
+}
+
+#sales-notification-card{
+    background-color: white;
+    width: 395px;
+    display: flex;
+    padding: 15px 10px;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 20px;
+}
+
+img{
+    width: 90px;
+    height: 80px;
+}
+
+#content{
+    margin-left: 10px;
+}
+
+#purchaser-info{
+    display: flex;
+}
+
+#purchaser-info p{
+    font-size: 18px;
+    width: 280px;
+}
+
+#purchasing_time{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.516);
+    font-style: italic;
+}
+
+#purchaser-info i{
+    margin-left: -10px;
+    margin-top: -5px;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.474);
+    cursor: pointer;
+}
+
+#purchaser-info i:hover{
+    color: black;
+}
+
+#buy-Now-Verify-Purchased{
+    display: flex;
+    gap: 47px;
+    margin-top: 10px;
+}
+
+#buy-Now-Verify-Purchased span{
+    font-size: 18px;
+    font-weight: 500;
+    font-style: oblique;
+}
+
+#buy-now-btn{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+#buy-Now-Verify-Purchased i{
+    font-size: 10x;
+}
+
+
+#sales-notification-card {
+    position: absolute; /* Ensures it can move freely */
+    left: -100%; /* Start off-screen on the left */
+    animation: slideIn 1s ease-out forwards; /* Apply the animation */
+    animation-delay: 5s; /* Delay the animation by 2 seconds */
+}
+
+@keyframes slideIn {
+    0% {
+        left: -100%; /* Start off-screen */
+    }
+    100% {
+        left: 1%; /* Slide into view (adjust as needed) */
+    }
+}
